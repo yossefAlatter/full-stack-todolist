@@ -1,0 +1,38 @@
+/**********************************/
+/********** reset style  **********/
+/**********************************/
+
+
+/** reset style for all elements **/
+/** start **/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/** end **/
+
+/** reset font style for body **/
+/** start **/
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+/** end **/
+
+/** reset style for all anchor tages **/
+/** start **/
+a{
+  text-decoration: none;
+}
+/** end **/
+
+/** reset style for all buttons **/
+/** start **/
+button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+/** end **/

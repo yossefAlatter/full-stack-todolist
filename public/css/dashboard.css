@@ -1,0 +1,275 @@
+/***********************************/
+/********* dashboard style *********/
+/***********************************/
+
+/** dashboard navbar **/
+/** start **/
+.navbar__logo{
+  color: var(--mainColor);
+}
+.navbar__logout{
+  color: white;
+  background-color: var(--mainColor);
+  padding: 10px;
+  width: 120px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.navbar__logout:hover{
+  background-color: white;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+/** end **/
+
+
+/** dashboard head style **/
+/** start **/
+.dashboard-head{
+  display: grid;
+  grid-template-areas: "b1 b2 b3";
+  gap: 20px;
+  padding: 0 70px;
+  margin-top: 85px;
+  justify-items: center;
+  align-items: center;
+}
+/** dashboard-head media **/
+@media screen and (max-width: 1350px){
+  .dashboard-head{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .dashboard-head{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .dashboard-head{
+    grid-template-areas: "b3" "b1" "b2";
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/** dashborad left part **/
+.dashboard-head .left-part{
+  grid-area: b1;
+}
+.dashboard-head .left-part h2{
+  font-size: 2.7em;
+}
+.dashboard-head .left-part h2 .user{
+  color: var(--mainColor);
+}
+/** dashboard left part media **/
+@media screen and (max-width: 990px) {
+  .dashboard-head .left-part h2{
+    text-align: center;
+    font-size: 2.4em;
+  }
+}
+
+/** dashboard center part **/
+.dashboard-head .center-part{
+  grid-area: b2;
+}
+.dashboard-head .center-part button{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--mainColor);
+  font-size: 1.8em;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dashboard-head .center-part button:hover{
+  background-color: white;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+
+/** dashboard right part **/
+.dashboard-head .right-part{
+  grid-area: b3;
+}
+.dashboard-head .right-part .clock{
+  font-size: 5em;
+  color: var(--mainColor);
+  font-weight: 500;
+}
+
+/** end **/
+
+
+/** dashboard main style **/
+/** start **/
+.dashboard-main{
+  display: grid;
+  grid-template-areas: "z1 z2 z3";
+  gap: 20px;
+  margin-top: 60px;
+  padding: 0 70px;
+  padding-bottom: 80px;
+}
+/** dashboard main media **/
+@media screen and (max-width: 1350px){
+  .dashboard-main{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .dashboard-main{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 990px){
+  .dashboard-main{
+    grid-template-areas: "z1" "z2" "z3";
+    gap: 0;
+    row-gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/** tasks list style **/
+.dashboard-main .tasks{
+  grid-area: z1;
+  background-color: var(--listColor);
+  border-radius: 8px;
+  border: 1px solid var(--mainColor);
+  min-height: 500px;
+  padding: 20px;
+}
+.dashboard-main .tasks h3{
+  background-color: var(--mainColor);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  cursor: default;
+}
+.tasks-items{
+  margin-top: 20px;
+  list-style: none;
+}
+
+/** tasks on working list style **/
+.dashboard-main .on-working{
+  grid-area: z2;
+  background-color: var(--listColor);
+  border-radius: 8px;
+  border: 1px solid var(--onWorkingColor);
+  min-height: 500px;
+  padding: 20px;
+}
+.dashboard-main .on-working h3{
+  background-color: var(--onWorkingColor);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  cursor: default;
+}
+.dashboard-main .on-working .tasks-items .task{
+  border: 1px solid var(--onWorkingColor);
+}
+.dashboard-main .on-working .tasks-items .task .task-info h4{
+  color: var(--onWorkingColor);
+}
+.dashboard-main .on-working .tasks-items .task .task-info p{
+  color: var(--onWorkingColor);
+}
+.dashboard-main .on-working .tasks-items .task .controlls-btns i{
+  color: var(--onWorkingColor);
+}
+.dashboard-main .on-working .tasks-items .task .controlls-btns i:hover{
+  background-color: var(--onWorkingColor);
+  color: white;
+}
+.dashboard-main .on-working .tasks-items .task .next-btn button{
+  background-color: var(--onWorkingColor);
+}
+.dashboard-main .on-working .tasks-items .task .next-btn button:hover{
+  color: var(--onWorkingColor);
+  border-color: var(--onWorkingColor);
+  background-color: white;
+}
+
+
+/** completed tasks list style **/
+.dashboard-main .completed{
+  grid-area: z3;
+  background-color: var(--listColor);
+  border-radius: 8px;
+  border: 1px solid var(--completedColor);
+  min-height: 500px;
+  padding: 20px;
+}
+.dashboard-main .completed h3{
+  background-color: var(--completedColor);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  cursor: default;
+}
+.dashboard-main .completed .tasks-items .task{
+  border: 1px solid var(--completedColor);
+}
+.dashboard-main .completed .tasks-items .task .task-info h4{
+  color: var(--completedColor);
+}
+.dashboard-main .completed .tasks-items .task .task-info p{
+  color: var(--completedColor);
+}
+.dashboard-main .completed .tasks-items .task .controlls-btns i{
+  color: var(--completedColor);
+}
+.dashboard-main .completed .tasks-items .task .controlls-btns i:hover{
+  background-color: var(--completedColor);
+  color: white;
+}
+.dashboard-main .completed .tasks-items .task .next-btn button{
+  background-color: var(--completedColor);
+}
+.dashboard-main .completed .tasks-items .task .next-btn button:hover{
+  color: var(--completedColor);
+  border-color: var(--completedColor);
+  background-color: white;
+}
+
+/** end **/
+
+
+/** completed static **/
+/** start **/
+.static-completed{
+  border: 1px solid var(--completedColor);
+  box-shadow: 1px 1px 4px var(--completedColor);
+}
+.static-completed .precentage-head{
+  color: var(--completedColor);
+}
+.static-completed .actual-progress{
+  background-color: var(--completedColor);
+}
+.static-completed .tasks-num{
+  color: var(--completedColor);
+}
+/** end **/

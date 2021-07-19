@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="./../fontawesome/all.min.css" />
+
+  <!-- general style -->
+  <link rel="stylesheet" href="./../css/general/main.css" />
+
+
+</head>
+<body>
+
+  <!-- log template-->
+  <!-- start -->
+  <div class="log">
+    <div class="log__container">
+
+      <!-- log left side -->
+      <!-- start -->
+      <div class="log__left-side">
+
+        <!-- left side bg -->
+        <div class="log__bg">
+          <img src="./../images/desktop-bg.png" alt="log background" />
+        </div>
+
+        <!-- left side welcoming head -->
+        <h2>welcome to ToDo Website</h2>
+
+        <!-- left side welcoming text -->
+        <p>Here, you can manage your tasks easliy and order them as you want</p>
+
+      </div>
+      <!-- end -->
+
+      <!-- log right side -->
+      <!-- start -->
+      <div class="log__right-side">
+
+        <!-- signup form -->
+        <!-- start -->
+        <form class="signup" novalidate>
+
+          <!-- form head -->
+          <!-- start -->
+          <h3 class="signup__head">Sign Up</h3>
+          <!-- end -->
+
+          <!-- form first name input -->
+          <!-- start -->
+          <div class="form__div" id="first-name-strc">
+            <input type="text" name="first_name" class="form__input" required />
+            <label for="first_name" class="form__label">First Name</label>
+            <div class="msg-error" id="first-name-error"></div>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <!-- end -->
+
+          <!-- form last name input -->
+          <!-- start -->
+          <div class="form__div" id="last-name-strc">
+            <input type="text" name="last_name" class="form__input" required />
+            <label for="last_name" class="form__label">Last Name</label>
+            <div class="msg-error" id="last-name-error"></div>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <!-- end -->
+
+          <!-- form email input -->
+          <!-- start -->
+          <div class="form__div" id="email-strc">
+            <input type="text" name="email" class="form__input" required />
+            <label for="email" class="form__label">Email</label>
+            <div class="msg-error" id="email-error"></div>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <!-- end -->
+
+          <!-- form password input -->
+          <!-- start -->
+          <div class="form__div" id="password-strc">
+            <input type="password" name="password" class="form__input" required />
+            <label for="password" class="form__label">Password</label>
+            <div class="msg-error" id="password-error"></div>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <!-- end -->
+
+          <!-- form confirm password input -->
+          <!-- start -->
+          <div class="form__div" id="confirm-password-strc">
+            <input type="password" name="confirm_password" class="form__input" required />
+            <label for="confirm_password" class="form__label">Confirm password</label>
+            <div class="msg-error" id="confirm-password-error"></div>
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <!-- end -->
+
+          <!-- form submit button -->
+          <!-- start -->
+          <div class="form__btn">
+            <button>Sign Up</button>
+          </div>
+          <!-- end -->
+
+          <!-- move to login -->
+          <!-- start -->
+          <span class="log__move-span">You aleardy have registered, <a href="#">Login</a></span>
+          <!-- end -->
+
+        </form>
+        <!-- end -->
+
+      </div>
+      <!-- end -->
+
+    </div>
+  </div>
+  <!-- end -->
+  
+</body>
+</html>

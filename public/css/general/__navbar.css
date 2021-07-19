@@ -1,0 +1,99 @@
+/******************************/
+/******** navbar style ********/
+/******************************/
+
+
+/** navbar layuot **/
+/** start **/
+.navbar{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 70px;
+}
+
+/** navbar layout media **/
+/** start **/
+@media screen and (max-width: 1360px) {
+  .navbar{
+    padding: 25px 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navbar{
+    padding: 25px 20px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar{
+    padding: 25px 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar{
+    padding: 25px 10px;
+    flex-direction: column;
+  }
+}
+/** end **/
+
+/** end **/
+
+/** navbar logo **/
+/** start **/
+.navbar__logo{
+color: white;
+cursor: pointer;
+}
+
+/** navbar logo media **/
+/** start **/
+@media screen and (max-width: 500px) {
+  .navbar__logo{
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+}
+/** end **/
+
+/** end **/
+
+/** navbar buttons **/
+/** start **/
+.navbar__signup, .navbar__login{
+  padding: 12px;
+  width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.navbar__signup{
+  margin-right: 20px;
+}
+.navbar__signup:hover{
+  background-color: white;
+  color: var(--mainColor);
+}
+.navbar__login{
+background-color: var(--mainColor);
+}
+.navbar__login:hover{
+  background-color: white;
+  color: var(--mainColor);
+}
+
+/** navbar btns media **/
+/** start **/
+@media screen and (max-width: 500px) {
+  .navbar__btns{
+    margin-left: auto;
+  }
+  .navbar__signup, .navbar__login{
+    max-width: 90px;
+  }
+}
+/** end **/
+
+/** end **/

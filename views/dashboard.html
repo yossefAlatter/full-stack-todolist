@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+
+  <!-- font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- fontawesome icons -->
+  <link rel="stylesheet" href="./../fontawesome/all.min.css" />
+
+  <!-- general style -->
+  <link rel="stylesheet" href="./../css/general/main.css" />
+
+  <!-- dashboard color -->
+  <link rel="stylesheet" href="./../css/dashboard.css" />
+
+</head>
+<body>
+
+  <!-- navbar -->
+  <!-- start -->
+  <nav class="navbar">
+
+    <!-- navbar logo -->
+    <h2 class="navbar__logo">ToDo</h2>
+
+    <!-- navbar signup and login buttons -->
+    <div  class="navbar__btns">
+      <button class="navbar__logout">Logout</button>
+    </div>
+
+  </nav>
+  <!-- end -->
+
+
+  <!-- dashboard head -->
+  <!-- start -->
+  <header class="dashboard-head">
+
+    <!-- dashboard head left part -->
+    <div class="left-part">
+      <h2>Welcome,<br/><span class="user">Yossef Alatter</span></h2>
+    </div>
+
+    <!-- dashboard head center part -->
+    <div class="center-part">
+      <button>New Task</button>
+    </div>
+
+    <!-- dashboard head right part -->
+    <div class="right-part">
+      <div class="clock">12:55<sub>pm</sub></div>
+    </div>
+
+  </header>
+  <!-- end -->
+
+
+  <!-- dashboard main style -->
+  <!-- start -->
+  <main class="dashboard-main">
+
+    <!-- tasks list -->
+    <div class="tasks">
+      <h3>Tasks</h3>
+      <ul class="tasks-items">
+        <li class="task">
+          <div class="task-info">
+            <h4>Go To Work</h4>
+            <p>wake up early prepare your page go to work</p>
+          </div>
+          <div class="controlls-btns">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div class="next-btn">
+            <button>Work On</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- tasks on working list -->
+    <div class="on-working">
+      <h3>On Working</h3>
+      <ul class="tasks-items">
+        <li class="task">
+          <div class="task-info">
+            <h4>Go To Work</h4>
+            <p>wake up early prepare your page go to work</p>
+          </div>
+          <div class="controlls-btns">
+            <i class="fas fa-sign-out-alt" style="font-size: 18px; transform:  rotate(180deg);"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div class="next-btn">
+            <button>Complete</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- completed tasks list -->
+    <div class="completed">
+      <h3>Completed</h3>
+      <ul class="tasks-items">
+        <li class="task">
+          <div class="task-info">
+            <h4>Go To Work</h4>
+            <p>wake up early prepare your page go to work</p>
+          </div>
+          <div class="controlls-btns">
+            <i class="fas fa-sign-out-alt" style="font-size: 18px; transform:  rotate(180deg);"></i>
+            <i class="fas fa-trash-alt"></i>
+          </div>
+          <div class="next-btn">
+            <button>Done</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  <!-- end -->
+
+
+  <!-- dashboard static -->
+  <!-- start -->
+  <div class="static static-on-working">
+    <div class="precentage">
+      <div class="precentage-head">
+        <span class="precentage-title">on Working</span>
+        <span class="precentage-num">12%</span>
+      </div>
+      <div class="precentage-progress">
+        <div class="actual-progress"></div>
+      </div>
+    </div>
+    <div class="tasks-num">
+      <div>5</div>
+      <span>Tasks</span>
+    </div>
+  </div>
+  <!-- end -->
+
+
+  <!-- dashboard static -->
+  <!-- start -->
+  <div class="static static-completed">
+    <div class="precentage">
+      <div class="precentage-head">
+        <span class="precentage-title">on Working</span>
+        <span class="precentage-num">12%</span>
+      </div>
+      <div class="precentage-progress">
+        <div class="actual-progress"></div>
+      </div>
+    </div>
+    <div class="tasks-num">
+      <div>5</div>
+      <span>Tasks</span>
+    </div>
+  </div>
+  <!-- end -->
+
+  
+</body>
+</html>

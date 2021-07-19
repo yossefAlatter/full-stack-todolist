@@ -1,0 +1,23 @@
+/** import reset style sheet **/
+@import url('./__reset.css');
+
+/** import variables file **/
+@import url('./__variables.css');
+
+/** import navbar style **/
+@import url('./__navbar.css');
+
+/** import slider style **/
+@import url('./__slider.css');
+
+/** import form templete style **/
+@import url('./__form-template.css');
+
+/** import form input style **/
+@import url('./__form-input.css');
+
+/** import tasks items style **/
+@import url('./__tasks-items.css');
+
+/** import static field style **/
+@import url('./__static-field.css');

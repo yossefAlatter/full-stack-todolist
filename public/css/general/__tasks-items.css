@@ -1,0 +1,81 @@
+/*********************************/
+/******* tasks-items style *******/
+/*********************************/
+
+
+/** task items style **/
+/** start **/
+
+/** list **/
+.tasks-items .task{
+  border-radius: 8px;
+  border: 1px solid var(--mainColor);
+  background-color: white;
+  padding: 12px;
+  display: grid;
+  grid-template-areas:
+  "x1 x1 x1 x2 x2" 
+  "x1 x1 x1 x3 x3";
+}
+
+/** info **/
+.tasks-items .task .task-info{
+  grid-area: x1;
+  padding-right: 50px;
+}
+
+/** title **/
+.tasks-items .task .task-info h4{
+  margin-bottom: 10px;
+  color: var(--mainColor);
+}
+
+/** description **/
+.tasks-items .task .task-info p{
+  color: var(--subColor);
+}
+
+/** controlls btns **/
+.tasks-items .task .controlls-btns{
+  grid-area: x2;
+  display: flex;
+  justify-content: flex-end;
+}
+.tasks-items .task .controlls-btns i{
+  color: var(--mainColor);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tasks-items .task .controlls-btns i:hover{
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 14px;
+}
+
+/** next btn **/
+.tasks-items .task .next-btn{
+  align-self: end;
+}
+.tasks-items .task .next-btn button{
+  background-color: var(--mainColor);
+  padding: 8px;
+  font-weight: 600;
+  margin-left: auto;
+  width: 100%;
+  cursor: pointer;
+}
+.tasks-items .task .next-btn button:hover{
+  background-color: white;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+}
+
+/** end **/

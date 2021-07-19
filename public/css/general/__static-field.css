@@ -1,0 +1,87 @@
+/**********************************/
+/******* static field style *******/
+/**********************************/
+
+/** dashboard static **/
+/** start **/
+.static{
+  display: flex;
+  border: 1px solid var(--onWorkingColor);
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px var(--onWorkingColor);
+  padding: 18px;
+  margin: 0 70px;
+  margin-bottom: 30px;
+}
+/** dashboard main media **/
+@media screen and (max-width: 1350px){
+  .static{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .static{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 990px){
+  .static{
+    flex-direction: column-reverse;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.precentage{
+  width: 50%;
+}
+/** precentage media **/
+@media screen and (max-width: 990px) {
+  .precentage{
+    min-width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.precentage-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--onWorkingColor);
+  font-weight: 500;
+  font-size: 22px;
+}
+.precentage-progress{
+  border-radius: 50px;
+  width: 100%;
+  background-color: rgba(221, 220, 220, 0.795);
+  height: 15px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.actual-progress{
+  width: 12%;
+  background-color: var(--onWorkingColor);
+  height: 100%;
+  border-radius: 50px;
+}
+.tasks-num{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--onWorkingColor);
+  font-size: 25px;
+  font-weight: 500;
+}
+/** task num media **/
+@media screen and (max-width: 990px) {
+  .tasks-num{
+    min-width: 100%;
+  }
+}
+
+/** end **/

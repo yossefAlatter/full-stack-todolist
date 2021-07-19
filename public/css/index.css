@@ -1,0 +1,104 @@
+/**********************************/
+/*********** Index style **********/
+/**********************************/
+
+
+/** background style **/
+/** start **/
+
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg__desktop, .bg__mobile{
+  width: 100%;
+  height: 100%;
+}
+
+/** background media **/
+/** start **/
+@media screen and (min-width: 770px) {
+  .bg__desktop{
+    display: block;
+  }
+  .bg__mobile{
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+  .bg__desktop{
+    display: none;
+  }
+  .bg__mobile{
+    display: block;
+  }
+}
+/** end **/
+
+/** end **/
+
+
+
+/** intro style **/
+/** start **/
+.intro{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/** intro head **/
+.intro h2{
+  color: white;
+  font-size: 3.5em;
+  text-transform: capitalize;
+  text-align: center;
+  max-width: 612px;
+  cursor: default;
+}
+/** intro head media **/
+@media screen and (max-width: 720px) {
+  .intro h2{
+    font-size: 2.6em;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro h2{
+    font-size: 2.0em;
+  }
+}
+
+/** intro start button **/
+.intro button{
+  background-color: var(--mainColor);
+  max-width: 250px;
+  width: 230px;
+  padding: 16px;
+  margin-top: 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+.intro button:hover{
+  background-color: white;
+  color: var(--mainColor);
+}
+
+/** end **/
+
+

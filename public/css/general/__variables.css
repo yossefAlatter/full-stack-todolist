@@ -1,0 +1,17 @@
+/***************************/
+/******** variables ********/
+/***************************/
+
+/** declare variables in root **/
+/** start **/
+:root{
+
+  /** declare colors variables **/
+  --mainColor: #6B87EB;
+  --subColor: #a8b6eb;
+  --completedColor: #8ae668b6;
+  --onWorkingColor: #e76d6dc0;
+  --listColor: #e5e5e5ce;
+
+}
+/** end **/
